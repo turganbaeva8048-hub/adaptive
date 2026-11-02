@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>КТ 4. Фитнес-клуб «Атлант» — задание</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: 'Segoe UI', sans-serif; background: #F4F5F6; color: #161A1D; margin: 0; line-height: 1.6; }
+  header { background: #161A1D; color: #fff; padding: 36px 20px; }
+  header .wrap, .wrap { max-width: 960px; margin: 0 auto; }
+  header .sub { color: #FF5A3C; font-weight: bold; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+  header h1 { margin: 8px 0 4px; font-size: 32px; }
+  header p { color: #9AA4AB; margin: 0; }
+  main.wrap { padding: 20px 20px 60px; }
+  h2 { color: #E0452A; border-bottom: 2px solid #E0452A; padding-bottom: 6px; margin-top: 40px; }
+  code.tag { background: #FBE3DD; color: #C23A1E; padding: 1px 6px; border-radius: 4px; font-family: Consolas, monospace; font-size: 0.92em; }
+  .note { background: #fff; border-left: 5px solid #FF5A3C; border-radius: 8px; padding: 12px 18px; margin: 18px 0; color: #4A545B; }
+  .note b { color: #E0452A; }
+  .mockup { background: #fff; border: 1px solid #D8DDE1; border-radius: 12px; padding: 18px; margin: 12px 0; text-align: center; }
+  .mockup img { max-width: 360px; width: 100%; border: 1px solid #D8DDE1; border-radius: 8px; }
+  footer { background: #161A1D; color: #9AA4AB; text-align: center; padding: 20px; font-size: 14px; }
+  a { color: #E0452A; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="sub">КТ 4 · Вариант 2</div>
+    <h1>Фитнес-клуб «Атлант»</h1>
+    <p>Десктопная версия: <a href="index.html" style="color:#FF5A3C">index.html</a></p>
+  </div>
+</header>
+
+<main class="wrap">
+
+<h2>Макет мобильной версии</h2>
+<p>Файл <code class="tag">макет-мобильный.jpg</code> лежит в этой же папке. Сверстать нужно <b>примерно</b> по макету: тот же порядок блоков и общая структура, точные размеры не проверяются.</p>
+<div class="mockup">
+  <img src="макет-мобильный.jpg" alt="Макет мобильной версии сайта фитнес-клуба">
+</div>
+
+<h2>Рекомендации по мобильной версии</h2>
+<ol>
+  <li><b>Шапка.</b> Логотип по центру, четыре пункта меню столбиком под ним: <code class="tag">.header-inner { flex-direction: column }</code>, у <code class="tag">.nav a</code> убрать левый отступ, задать отступ снизу и центрирование.</li>
+  <li><b>Первый экран.</b> Заголовок уменьшить до 30–32 px (<code class="tag">.hero h1</code>), отступы секции сократить до 80–100 px. Кнопку «Записаться» растянуть на всю ширину контента.</li>
+  <li><b>Программы.</b> Три карточки в один столбец: <code class="tag">.cards { flex-direction: column }</code>, <code class="tag">.card { width: 100% }</code>.</li>
+  <li><b>Тренеры.</b> Карточки тренеров в один столбец: <code class="tag">.trainer { width: 100% }</code>. Секция остаётся на тёмном фоне.</li>
+  <li><b>Абонементы.</b> Тарифы друг под другом: <code class="tag">.price-card { width: 100% }</code>. Порядок как на десктопе: «Утренний» → «Стандарт» → «Годовой». Бейдж «Выгодно» у центрального тарифа оставить.</li>
+  <li><b>Подвал.</b> Две колонки столбиком по центру: <code class="tag">.footer-inner { flex-direction: column; text-align: center }</code>.</li>
+</ol>
+
+<div class="note">
+  <b>Подсказка:</b> все переопределения добавляются в конец <code class="tag">css/style.css</code> внутри <code class="tag">@media (max-width: 768px) { ... }</code>. Секции с классом <code class="tag">.cards</code> три (программы, тренеры, тарифы) — одно правило для <code class="tag">.cards</code> и одно для ширины карточек закроет все три блока.
+</div>
+
+<h2>Проверка</h2>
+<ul>
+  <li>DevTools → Toggle device toolbar (Ctrl+Shift+M), ширина 375 px.</li>
+  <li>Горизонтальной прокрутки нет.</li>
+  <li>Порядок блоков совпадает с макетом: шапка → первый экран → программы → тренеры → абонементы → подвал.</li>
+</ul>
+
+</main>
+
+<footer>Основы HTML/CSS · КТ 4 · Фитнес-клуб «Атлант»</footer>
+
+</body>
+</html>
