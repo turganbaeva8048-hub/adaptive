@@ -222,3 +222,128 @@ h2 {
   color: #fff;
   margin-bottom: 12px;
 }
+/* АДАПТИВНАЯ ВЕРСТКА ДЛЯ ТЕЛЕФОНОВ */
+@media screen and (max-width: 767px) {
+
+/* Шапка */
+.header {
+padding: 16px 0;
+}
+
+.header-inner {
+flex-direction: column;
+gap: 16px;
+}
+
+.logo {
+font-size: 26px;
+}
+
+.nav {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 12px 18px;
+}
+
+.nav a {
+margin-left: 0;
+font-size: 14px;
+}
+
+/* Первый экран */
+.hero {
+padding: 80px 0;
+background-position: center;
+}
+
+.hero h1 {
+font-size: 36px;
+margin-bottom: 16px;
+}
+
+.hero p {
+font-size: 16px;
+margin-bottom: 24px;
+}
+
+.btn {
+padding: 12px 24px;
+font-size: 14px;
+}
+
+/* Секции */
+.section {
+padding: 48px 0;
+}
+
+h2 {
+font-size: 26px;
+margin-bottom: 28px;
+}
+
+/* Карточки */
+.cards {
+flex-direction: column;
+gap: 24px;
+}
+
+.card,
+.trainer,
+.price-card {
+width: 100%;
+}
+
+.card img {
+height: 220px;
+}
+
+.card-body {
+padding: 18px;
+}
+
+.card-body p {
+font-size: 14px;
+}
+
+/* Тренеры */
+.trainer img {
+height: 300px;
+}
+
+.trainer p {
+font-size: 14px;
+}
+
+/* Абонементы */
+.price-card {
+padding: 28px 20px;
+}
+
+.price-value {
+font-size: 30px;
+}
+
+.price-value span {
+font-size: 14px;
+}
+
+.price-card li {
+font-size: 14px;
+}
+
+/* Подвал */
+.footer {
+padding: 32px 0;
+}
+
+.footer-inner {
+flex-direction: column;
+gap: 24px;
+}
+
+.footer p {
+font-size: 14px;
+}
+
+}
